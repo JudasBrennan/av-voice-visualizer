@@ -1,0 +1,11 @@
+:root { --avviz-bg:#0f1117; --avviz-tile:#141821; --avviz-name:#23b0ff; --avviz-capsule:#2a2f45; --avviz-border-idle:#532a75; --avviz-border-speak:#22d3ee; --avviz-text:#d9e1ee; }
+.avviz-window { background: linear-gradient(135deg, #0e1014 0%, #171a22 100%); padding: 8px 10px; }
+.avviz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.avviz-tile { background: var(--avviz-tile); border-radius: 14px; padding: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.35); }
+.avviz-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.avviz-name { color: var(--avviz-name); font-weight: 700; letter-spacing: .6px; }
+.avviz-badge { font-size:11px; color:#9aa4b2; }
+.avviz-capsule { background: var(--avviz-capsule); border-radius: 14px; padding:8px; border:2px solid var(--avviz-border-idle); box-shadow: inset 0 0 8px rgba(0,0,0,.35); transition: border-color .12s ease, box-shadow .12s ease; }
+.avviz-capsule.is-speaking { border-color: var(--avviz-border-speak); box-shadow: inset 0 0 12px rgba(34,211,238,.25), 0 0 10px rgba(34,211,238,.15); }
+.avviz-canvas { display:block; width:100%; height:96px; }
+.avviz-host { position: relative; } .avviz-overlay { pointer-events:none; }

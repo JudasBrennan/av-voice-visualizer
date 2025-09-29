@@ -1,0 +1,23 @@
+<section class="avviz-window">
+  <div class="avviz-toolbar" style="display:flex; gap:8px; margin-bottom:8px;">
+    <button type="button" class="avviz-btn" data-action="resume">Start Audio</button>
+    <button type="button" class="avviz-btn" data-action="refresh" onclick="__AVV_WindowClass.getInstance().render(true)">Refresh</button>
+  </div>
+  {{#if players.length}}
+    <div class="avviz-grid">
+      {{#each players}}
+        <div class="avviz-tile" data-user-id="{{this.id}}">
+          <div class="avviz-header">
+            <div class="avviz-name" style="color: {{this.color}}">{{this.name}}</div>
+            <div class="avviz-badge">{{this.status}}</div>
+          </div>
+          <div class="avviz-capsule">
+            <canvas class="avviz-canvas"></canvas>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <p style="opacity:0.8;">No active users.</p>
+  {{/if}}
+</section>

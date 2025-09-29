@@ -1,0 +1,30 @@
+{
+  "id": "av-voice-visualizer",
+  "title": "AV Voice Visualizer (Overlay + Window)",
+  "version": "0.3.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.348"
+  },
+  "manifest": "https://github.com/JudasBrennan/av-voice-visualizer/releases/latest/download/module.json",
+  "download": "https://github.com/JudasBrennan/av-voice-visualizer/releases/latest/download/module.zip",
+  "url": "https://github.com/JudasBrennan/av-voice-visualizer",
+  "authors": [
+    {
+      "name": "Judas Brennan",
+      "flags": {}
+    }
+  ],
+  "description": "Live audio waveform visualizer for Foundry\u2019s A/V: view per-user waveforms in a window and optionally overlay them on the A/V dock.",
+  "license": "MIT",
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "scripts": [
+    "scripts/boot.js"
+  ],
+  "styles": [
+    "styles/styles.css"
+  ],
+  "flags": {}
+}
